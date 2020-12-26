@@ -1,0 +1,36 @@
+<mvc:View controllerName="ns.HTML5Module.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:tnt="sap.tnt" xmlns:sf="sap.ui.layout.form">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+                    <tnt:ToolHeader >
+                    <ToolbarSpacer/>
+                    <Button icon="sap-icon://SAP-icons-TNT/User"></Button>
+                    </tnt:ToolHeader>
+                    <VBox >
+                    <items>
+                       <sf:SimpleForm editable="true">
+								<VBox alignContent="Center" justifyContent="Center">
+									<HBox alignContent="Center" justifyContent="Center">
+										<Input id="idUsername" placeholder="Enter Your Name" width="20rem" fieldWidth="30rem"></Input>
+									</HBox>
+									<HBox alignContent="Center" justifyContent="Center">
+										<Input id="idPassword" placeholder="Enter Your Password" width="20rem"></Input>
+									</HBox>
+									<HBox alignContent="Center" justifyContent="Center">
+										<Button text="Login" width="20rem" press="onPress" type="Emphasized"></Button>
+									</HBox>
+								</VBox>
+							</sf:SimpleForm>
+                    </items>
+                    </VBox>
+                    </content>
+                    <footer>
+                    <Bar ></Bar>
+                    </footer>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
